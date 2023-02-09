@@ -12,7 +12,7 @@ export const RootNavigator = () =>{
     <BrowserRouter>
     <Routes>
         <Route path="/" element={<HomeScreen />}/>
-        <Route path="/type/:type" element={<TypeScreen />} />
+        <Route path="/category/:type" element={<TypeScreen />} />
     </Routes>
 
     </BrowserRouter>

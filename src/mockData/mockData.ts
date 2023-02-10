@@ -29,4 +29,24 @@ export const mockData:Array<{name:string,
         type:'COMMISSIONS',
         text:'firstPic'
     },
+    {name:firstPic,
+        type:'COMMISSIONS',
+        text:'firstPic'
+        },
+         {name:secondPic,
+        type:'PERSONNAL',
+        text:'firstPic'
+        },
+        {name:thirdPic,
+            type:'FLORENCE',
+            text:'firstPic'
+            },
+        {name:fourthPic,
+                type:'INFO',
+                text:'firstPic'
+                },
+        {name:fifthPic,
+            type:'COMMISSIONS',
+            text:'firstPic'
+        },
 ]

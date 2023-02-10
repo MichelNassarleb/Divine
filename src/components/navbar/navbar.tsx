@@ -10,7 +10,7 @@ export const Navbar:FC<NavbarProps> = (props) =>{
         <div className="navbar-subcontainer">
         {props?.name ? <h1 className="navbar-name">{props.name}</h1> : null}
         <div className="navbar-types-container">
-        {props?.types?.length > 0 ? props.types.map((item:string)=><Link to={`/category/${item}`} className="navbar-type"  children={item}/>) : null}
+        {props?.types?.length > 0 ? props.types.map((item:string,index)=><Link key={index} to={`/category/${item}`} className="navbar-type"  children={item}/>) : null}
         </div>
         {props?.copyright ? <p className="copyright">{props.copyright}</p> : null}
         <a target={'_blank'} href='https://www.instagram.com/divinegrgs/?igshid=Yzg5MTU1MDY=' className="navbar-type">

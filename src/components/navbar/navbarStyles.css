@@ -2,9 +2,10 @@
     height: 100vh;
     width: 200px;
     display: flex;
+    background-color: white;
     flex-direction: column;
-    justify-content: flex-end;
-    left: 50px;
+    justify-content: center;
+    left: 100px;
     position: absolute;
     padding-left: 20px;
     padding-right: 20px;
@@ -12,12 +13,12 @@
     
 }
 .navbar-subcontainer{
-    height: 80vh;
     display: flex;
     flex-direction: column;
     left: 50px;
     position: absolute;
     gap: 20px;
+    height: 50%;
 }
 .navbar-name{
     font-size: 20px;

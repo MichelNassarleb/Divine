@@ -16,7 +16,7 @@ export const HomeScreen = () =>{
   return <main style={{height:'100vh',overflow:'hidden'}}>
   <Navbar name="Divine Gerges" types={types} copyright="© Divine Gerges 2023"/>
               <SnapList direction="horizontal" className="snaplist-container">
-                       <SnapItem snapAlign="center" width="300px" className="empty-div"></SnapItem>
+                       <SnapItem snapAlign="center" width="340px" className="empty-div"></SnapItem>
                         {mockData.map((image,index) =>
                         <div style={{display:'block',height:'50%'}} key={index}>
                             <SnapImage image={image}  />

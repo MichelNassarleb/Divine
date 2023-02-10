@@ -2,3 +2,13 @@
 height: 100%;
 display: inline-block;
 }
+.snap-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.snap-item p{
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+}

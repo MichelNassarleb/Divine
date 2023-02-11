@@ -8,7 +8,7 @@ export const Navbar:FC<NavbarProps> = (props) =>{
     
     return <nav className="navbar-container">
         <div className="navbar-subcontainer">
-        {props?.name ? <h1 className="navbar-name">{props.name}</h1> : null}
+        {props?.name ? <h1 className="navbar-name"><a href="/"> {props.name}</a></h1> : null}
         <div className="navbar-types-container">
         {props?.types?.length > 0 ? props.types.map((item:string,index)=><Link key={index} to={`/category/${item}`} className="navbar-type"  children={item}/>) : null}
         </div>

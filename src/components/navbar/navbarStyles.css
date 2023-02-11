@@ -42,3 +42,9 @@
     font-size: 14px;
 
 }
+@media only screen and ( max-width:1000px ){
+    .navbar-container{display: none;}
+    .empty-div{
+        display: none;
+    }
+}

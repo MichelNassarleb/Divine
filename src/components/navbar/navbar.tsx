@@ -14,7 +14,7 @@ export const Navbar:FC<NavbarProps> = (props) =>{
         </div>
         {props?.copyright ? <p className="copyright">{props.copyright}</p> : null}
         <a target={'_blank'} href='https://www.instagram.com/divinegrgs/?igshid=Yzg5MTU1MDY=' className="navbar-type">
-        <InstagramIcon />
+        <InstagramIcon fontSize="small"/>
         </a>
         </div>
     </nav>

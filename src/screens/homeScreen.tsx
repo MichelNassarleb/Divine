@@ -6,6 +6,7 @@ import { mockData } from "../mockData/mockData";
 import { addTypesOfPictures } from "../redux/slices/appSlice";
 import { SnapImage } from "../components/imageItem/snapImage";
 import './homeScreenStyles.css'
+import { Menu } from "../components/menu/menu";
 export const HomeScreen = () =>{
     const dispatch = useDispatch()
   useEffect(()=>{
@@ -15,6 +16,7 @@ export const HomeScreen = () =>{
 
   return <main style={{height:'100vh',overflow:'hidden'}}>
   <Navbar name="Divine Gerges" types={types} copyright="© Divine Gerges 2023"/>
+  <Menu />
               <SnapList direction="horizontal" className="snaplist-container">
                        <SnapItem snapAlign="center" width="340px" className="empty-div"></SnapItem>
                         {mockData.map((image,index) =>

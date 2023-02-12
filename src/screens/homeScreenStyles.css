@@ -9,4 +9,8 @@
     .homescreen-snap-item-container{
         height: 95vh;
     }
+    .snaplist-container{
+    margin-top: calc(5vh + 40px);
+        align-items: flex-start;
+    }
 }

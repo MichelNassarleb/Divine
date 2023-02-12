@@ -20,7 +20,7 @@ export const HomeScreen = () =>{
               <SnapList direction="horizontal" className="snaplist-container">
                        <SnapItem snapAlign="center" width="340px" className="empty-div"></SnapItem>
                         {mockData.map((image,index) =>
-                        <div style={{display:'block',height:'50%'}} key={index}>
+                        <div className="homescreen-snap-item-container" key={index}>
                             <SnapImage image={image}  />
                             </div>
                         )}

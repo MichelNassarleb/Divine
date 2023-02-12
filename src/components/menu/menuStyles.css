@@ -1,3 +1,11 @@
+.menu-big-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+}
+
 .menu-container{
     display: flex;
     flex-direction: row;
@@ -5,8 +13,9 @@
     background-color: white;
     justify-content: space-between;
     align-items: center;
-padding: 20px;
-height: 3vh;
+    padding: 20px;
+    position: absolute;
+    top: 0px;
     margin: 0;
 }
 .menu-container h1{
@@ -18,7 +27,30 @@ height: 3vh;
     cursor: pointer;
 }
 @media only screen and (min-width:850px){
-   .menu-container{
+   .menu-big-container{
     display: none;
    }
+}
+.menu-options-container{
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    margin-top: calc(5vh + 40px);
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000;
+    height: calc(100vh - (5vh + 40px));
+
+}
+.menu-options-container a{
+    font-size: 13px;
+}
+.menu-container a{
+text-decoration: none;
+color: black;
+font-weight: 700;
 }

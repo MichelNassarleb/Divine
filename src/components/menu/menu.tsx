@@ -15,7 +15,7 @@ export const Menu: FC<any> = (props) => {
         <Link to='/'  children='Divine Gerges'/>
         <div className="burger-icon" onClick={() => console.log("test")}>
           <div onClick={() => setIsOpened((prev) => !prev)}>
-            {isOpened ? <CloseIcon /> : <MenuIcon />}
+            {isOpened ?<motion.div initial={{transform:'rotate(0deg)'}} transition={{duration:0.5,ease:'easeInOut'}} animate={{transform:'rotate(360deg)'}}><CloseIcon /></motion.div>  : <motion.div initial={{transform:'rotate(360deg)'}} transition={{duration:0.5,ease:'easeInOut'}} animate={{transform:'rotate(0deg)'}}><MenuIcon /></motion.div>}
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@ export const Menu: FC<any> = (props) => {
           transition={{ ease: "easeOut", duration: 1 }}
           className="menu-options-container"
           initial={{ height: 0, opacity: 0 }}
-          animate={{ opacity: 1, height: "100vh" }}
+          animate={{ opacity: 1, height: 'calc(100vh - (5vh + 40px))'}}
           exit={{ opacity: 0, height: 0 }}
         >
           {props?.types?.length > 0

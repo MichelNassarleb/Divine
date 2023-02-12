@@ -13,7 +13,7 @@ export const SnapImage: FC<SnapImageProps> = (props: any) => {
       className="snap-item"
       height={"100%"}
       width={"100%"}
-      snapAlign="center"
+      snapAlign="none"
       key={props?.key}
     >
       <LazyLoadImage

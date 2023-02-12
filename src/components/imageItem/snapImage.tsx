@@ -7,7 +7,7 @@ import './snapImageStyles.css'
 export const SnapImage:FC<SnapImageProps> = (props:any) =>{
   
     return ( <SnapItem margin={{ left: '0px', right: '0px' }} className='snap-item' height={'100%'} width={'100%'} snapAlign="center" key={props?.key}>
-    <LazyLoadImage effect="blur" src={props?.image.name} className='img-carousel' />
-    <p>{props?.image?.text}</p>
+    <LazyLoadImage effect="blur" src={props?.image.name}  className='img-carousel' />
+    <p >{props?.image?.text}</p>
 </SnapItem>)
 }

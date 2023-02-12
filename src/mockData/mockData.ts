@@ -23,12 +23,12 @@ export const mockData: Array<{
         {
             name: thirdPic,
             type: 'FLORENCE',
-            text: 'Divine'
+            text: 'ssaas'
         },
         {
             name: fourthPic,
             type: 'INFO',
-            text: 'Divine'
+            text: 'gsgas'
         },
         {
             name: fifthPic,

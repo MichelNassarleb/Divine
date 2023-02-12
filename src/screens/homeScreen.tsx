@@ -15,7 +15,7 @@ export const HomeScreen = () => {
   const types = useSelector((state: any) => state.app.typesOfPictures);
 
   return (
-    <main style={{ height: "100vh", overflow: "hidden" }}>
+    <main style={{ height: "100vh", overflow: "hidden"}}>
       <Navbar
         name="Divine Gerges"
         types={types}

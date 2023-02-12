@@ -3,6 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { SnapItem } from "react-snaplist-carousel";
 import { SnapImageProps } from "../../config/interfaces";
 import './snapImageStyles.css'
+import CloseIcon from '@mui/icons-material/Close';
 
 export const SnapImage:FC<SnapImageProps> = (props:any) =>{
   
@@ -11,7 +12,8 @@ export const SnapImage:FC<SnapImageProps> = (props:any) =>{
     <p className="first-subtitle">{props?.image?.text}</p>
     <div className="second-subtitle">
         <p >{props?.image?.text}</p>
-        <button>Info</button>
+        {/* <button>Info</button> */}
+        <CloseIcon style={{color:'grey'}}/>
     </div>
 </SnapItem>)
 }

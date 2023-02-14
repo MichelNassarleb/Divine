@@ -6,8 +6,9 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import CloseIcon from "@mui/icons-material/Close";
+import { MenuProps } from "../../config/interfaces";
 
-export const Menu: FC<any> = (props) => {
+export const Menu: FC<MenuProps> = (props) => {
   const [isOpened, setIsOpened] = useState(false);
   return (
     <div className="menu-big-container">

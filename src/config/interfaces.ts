@@ -12,3 +12,8 @@ export interface SnapImageProps{
     }
 
 }
+export interface MenuProps{
+    name:string;
+    types:Array<string>;
+    copyright:string;
+}

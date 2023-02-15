@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
 import { SnapItem, SnapList } from "react-snaplist-carousel";
@@ -21,7 +21,13 @@ export const TypeScreen = () => {
     );
   }, [mockData.length, type]);
   const types = useSelector((state: any) => state.app.typesOfPictures);
+  const [isLoading, setIsLoading] = useState(true)
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 5000);
+  }, [])
   return (
     <main style={{ height: "100vh", overflow: "hidden" }}>
       <Navbar

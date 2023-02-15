@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
 import { SnapItem, SnapList } from "react-snaplist-carousel";
 import { SnapImage } from "../components/imageItem/snapImage";
+import { Loader } from "../components/loader/loader";
 import { Menu } from "../components/menu/menu";
 import { Navbar } from "../components/navbar/navbar";
 import { mockData } from "../mockData/mockData";
@@ -24,12 +25,14 @@ export const TypeScreen = () => {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
+    setIsLoading(true)
     setTimeout(() => {
       setIsLoading(false)
     }, 5000);
-  }, [])
+  }, [type])
   return (
     <main style={{ height: "100vh", overflow: "hidden" }}>
+      <Loader isLoading={isLoading}/>
       <Navbar
         name="Divine Gerges"
         types={types?.filter((item: string) => item != type)}

@@ -19,7 +19,7 @@ export const HomeScreen = () => {
   useEffect(()=>{
 setTimeout(() => {
   setIsLoading(false)
-}, 3000);
+}, 5000);
   },[])
   return (
     <main style={{ height: "100vh", overflow: "hidden"}}>

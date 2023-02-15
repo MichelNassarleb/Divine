@@ -46,7 +46,6 @@ export const TypeScreen = () => {
       <SnapList direction="horizontal" className="snaplist-container">
         <SnapItem
           snapAlign="none"
-          width="340px"
           className="empty-div"
         ></SnapItem>
         {mockDataFiltered.map((image, index) => (

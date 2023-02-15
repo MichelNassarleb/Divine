@@ -41,7 +41,6 @@ setTimeout(() => {
       >
         <SnapItem
           snapAlign="none"
-          width="340px"
           className="empty-div"
         ></SnapItem>
         {mockData.map((image, index) => (

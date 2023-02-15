@@ -4,7 +4,9 @@
     align-items: center;
 }
 .homescreen-snap-item-container{display:'block';height:50%} 
-
+.empty-div{
+    width: 340px;
+}
 @media only screen and (max-width:850px){
     .homescreen-snap-item-container{
         height: 95vh;
@@ -15,6 +17,6 @@
         height: calc(100vh - (5vh + 40px));
     }
     .empty-div{
-        display: none;
+        width: 0px;
     }
 }

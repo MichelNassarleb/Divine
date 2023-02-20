@@ -32,7 +32,7 @@ export const TypeScreen = () => {
   }, [type])
   return (
     <main style={{ height: "100vh", overflow: "hidden" }}>
-      <Loader isLoading={isLoading}/>
+      <Loader isLoading={isLoading} color="#fff"/>
       <Navbar
         name="Divine Gerges"
         types={types?.filter((item: string) => item != type)}

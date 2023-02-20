@@ -23,7 +23,7 @@ setTimeout(() => {
   },[])
   return (
     <main style={{ height: "100vh", overflow: "hidden"}}>
-      <Loader isLoading={isLoading}/>
+      <Loader color="#fff" isLoading={isLoading}/>
       <Navbar
         name="Divine Gerges"
         types={types}

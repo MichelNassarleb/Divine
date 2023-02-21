@@ -25,6 +25,9 @@
     transition: 0.5s all ease;
     cursor: pointer;
 }
+.burger-icon:hover{
+    color: grey;
+}
 @media only screen and (min-width:850px){
    .menu-big-container{
     display: none;

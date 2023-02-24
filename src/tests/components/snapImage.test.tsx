@@ -1,9 +1,9 @@
 import React from "react";
 import { render, screen } from '@testing-library/react';
 import {SnapImage} from '../../components/imageItem/snapImage'
-describe('snapImage',()=>{
+describe('<SnapImage />',()=>{
     it('if theres no src path for the image, component should not render',()=>{
-        render(<SnapImage />)
+        render(<SnapImage image={{}}/>)
         expect(screen.queryByRole('img')).toBeFalsy()
     })
     it('if theres  src path for the image, component should render',()=>{

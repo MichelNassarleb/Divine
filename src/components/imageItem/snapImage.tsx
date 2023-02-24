@@ -21,14 +21,14 @@ export const SnapImage: FC<SnapImageProps> = (props: any) => {
         src={props?.image.name}
         className="img-carousel"
       />
-      <p className="first-subtitle">{props?.image?.text}</p>
+       {props?.image?.text ?  <p> {props?.image?.text}</p> : null}
       {infoDisplayed ? (
         <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "100%" }}
           className="second-subtitle"
         >
-          <p>{props?.image?.text}</p>
+        {props?.image?.text ?  <p>{props?.image?.text}</p> : null}
           <CloseIcon
             style={{ color: "grey",cursor:'pointer' }}
             onClick={() => setInfoDisplayed((prev) => !prev)}

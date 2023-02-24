@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export const SnapImage: FC<SnapImageProps> = (props: any) => {
   const [infoDisplayed, setInfoDisplayed] = useState(false);
   return (
-    <SnapItem
+ props?.image?.name ? <SnapItem
       margin={{ left: "0px", right: "0px" }}
       className="snap-item"
       height={"100%"}
@@ -41,6 +41,6 @@ export const SnapImage: FC<SnapImageProps> = (props: any) => {
           </motion.button>
         </div>
       )}
-    </SnapItem>
+    </SnapItem> : null
   );
 };

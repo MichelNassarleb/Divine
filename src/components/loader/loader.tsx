@@ -4,7 +4,7 @@ import './loaderStyles.css'
 
 export const Loader:FC<{isLoading?:boolean,color?:string}> = (props) =>{
 
-    return<div className="loader-container" style={props?.isLoading ? {zIndex:100} : {display:'none'}}>
+    return props?.isLoading ? <div role={'dialog'} className="loader-container">
         <CircleLoader color={props?.color}/>
-    </div>
+    </div> : null
 }

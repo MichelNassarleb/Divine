@@ -23,6 +23,7 @@ export const Menu: FC<MenuProps> = (props) => {
 
       {isOpened ? (
         <motion.div
+        role={'document'}
           transition={{ ease: "easeOut", duration: 1 }}
           className="menu-options-container"
           initial={{ height: 0, opacity: 0 }}

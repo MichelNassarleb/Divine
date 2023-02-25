@@ -9,14 +9,14 @@ import CloseIcon from "@mui/icons-material/Close";
 import { MenuProps } from "../../config/interfaces";
 
 export const Menu: FC<MenuProps> = (props) => {
-  const [isOpened, setIsOpened] = useState(false);
+  const [isOpened, setIsOpened] = useState(props?.isOpened);
   return (
     <div className="menu-big-container">
       <div className="menu-container">
         <Link to='/'  children='Divine Gerges'/>
         <div className="burger-icon" onClick={() => console.log("test")}>
           <div onClick={() => setIsOpened((prev) => !prev)}>
-            {isOpened ?<motion.div initial={{transform:'rotate(0deg)'}} transition={{duration:0.5,ease:'easeInOut'}} animate={{transform:'rotate(360deg)'}}><CloseIcon /></motion.div>  : <motion.div initial={{transform:'rotate(360deg)'}} transition={{duration:0.5,ease:'easeInOut'}} animate={{transform:'rotate(0deg)'}}><MenuIcon /></motion.div>}
+            {isOpened ?<motion.div role={'document'} initial={{transform:'rotate(0deg)'}} transition={{duration:0.5,ease:'easeInOut'}} animate={{transform:'rotate(360deg)'}}><CloseIcon /></motion.div>  : <motion.div initial={{transform:'rotate(360deg)'}} transition={{duration:0.5,ease:'easeInOut'}} animate={{transform:'rotate(0deg)'}}><MenuIcon /></motion.div>}
           </div>
         </div>
       </div>

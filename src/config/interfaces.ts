@@ -16,4 +16,5 @@ export interface MenuProps{
     name:string;
     types:Array<string>;
     copyright:string;
+    isOpened?:boolean;
 }

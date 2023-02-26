@@ -13,8 +13,8 @@ export interface SnapImageProps{
 
 }
 export interface MenuProps{
-    name:string;
+    name?:string;
     types:Array<string>;
-    copyright:string;
+    copyright?:string;
     isOpened?:boolean;
 }

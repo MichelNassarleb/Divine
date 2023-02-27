@@ -13,8 +13,13 @@ describe('<Loader />',()=>{
         render(<Navbar name={'test'} types={[]} copyright={''}/>)
         expect(screen.queryByRole('definition')).toBeTruthy()
     })
-    it('if name prop is defined, should show copyright text',()=>{
+    it('if copyright prop is defined, should show copyright text',()=>{
         render(<Navbar name={''} types={[]} copyright={'test'}/>)
         expect(screen.queryByRole('article')).toBeTruthy()
+    })
+    it('if name and copyright props are defined, should show the correct text',()=>{
+        render(<Navbar name={'test1'} types={[]} copyright={'test'}/>)
+        expect(screen.queryByText('test1')).toBeTruthy()
+        expect(screen.queryByText('test')).toBeTruthy()
     })
 })

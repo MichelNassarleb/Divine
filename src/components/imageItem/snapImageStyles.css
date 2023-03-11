@@ -52,7 +52,7 @@ display: inline-block;
         left: 10px;
     }
     .second-subtitle button{
-        color: grey;
+        color: rgb(176, 172, 172);
         border-width: 0px;
         border-radius: 5px;
         padding: 7px;
@@ -62,7 +62,7 @@ display: inline-block;
         cursor: pointer;
     }
     .second-subtitle p{
-        color: grey;
+        color: rgb(176, 172, 172);
     }
     .second-subtitle button:hover{
         background-position: left;

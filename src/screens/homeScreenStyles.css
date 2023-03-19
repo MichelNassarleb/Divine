@@ -7,3 +7,8 @@
 .empty-div{
     width: 340px;
 }
+@media only screen and (max-width:850px){
+    .empty-div{
+        width: 0px;
+    }
+}

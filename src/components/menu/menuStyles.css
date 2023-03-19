@@ -1,10 +1,15 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 .menu-big-container{
     width: 100vw;
     display: flex;
     flex-direction: column;
     position: absolute;
 }
-
+.divine-header{
+    font-family: 'EB Garamond', serif;
+}
 .menu-container{
     display: flex;
     flex-direction: row;

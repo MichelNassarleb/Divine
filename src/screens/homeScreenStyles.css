@@ -7,16 +7,3 @@
 .empty-div{
     width: 340px;
 }
-@media only screen and (max-width:850px){
-    .homescreen-snap-item-container{
-        height: 95vh;
-    }
-    .snaplist-container{
-    margin-top: calc(5vh + 40px);
-        align-items: flex-start;
-        height: calc(100vh - (5vh + 40px));
-    }
-    .empty-div{
-        width: 0px;
-    }
-}

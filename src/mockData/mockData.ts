@@ -42,7 +42,7 @@ export const mockData: Array<{
 }> = [
         {
             name: PIC1,
-            type: 'Personnal',
+            type: 'Portrait',
             text: 'Mother Nature'
         },
         {
@@ -72,7 +72,7 @@ export const mockData: Array<{
         },
         {
             name: PIC7,
-            type: 'Personnal',
+            type: 'Portrait',
             text: 'Loneliness'
         },
         {
@@ -87,22 +87,22 @@ export const mockData: Array<{
         },
         {
             name: PIC10,
-            type: 'Personnal',
+            type: 'Portrait',
             text: 'top G'
         },
         {
             name: PIC11,
-            type: 'Personnal',
+            type: 'Portrait',
             text: 'top G x2'
         },
         {
             name: PIC12,
-            type: 'Personnal',
+            type: 'Portrait',
             text: 'top G x2'
         },
         {
             name: PIC13,
-            type: 'Personnal',
+            type: 'Portrait',
             text: 'Night walks'
         },
         {
@@ -157,7 +157,7 @@ export const mockData: Array<{
         },
         {
             name: PIC24,
-            type: 'Personnal',
+            type: 'Portrait',
             text: 'Sunny mornings'
         },
         {
@@ -172,7 +172,7 @@ export const mockData: Array<{
         },
         {
             name: PIC27,
-            type: 'Personnal',
+            type: 'Portrait',
             text: 'Overthinking'
         },
         {

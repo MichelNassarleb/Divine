@@ -12,7 +12,7 @@ export const Menu: FC<MenuProps> = (props) => {
   return (
     <div className='menu-big-container'>
       <div className='menu-container'>
-        <Link to='/' children='Divine Gerges' />
+        <Link to='/' children='Divine Gerges' className='divine-header'/>
         <div className='burger-icon' onClick={() => console.log('test')}>
           <div onClick={() => setIsOpened((prev) => !prev)}>
             {isOpened ? (

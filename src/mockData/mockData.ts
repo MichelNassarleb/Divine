@@ -31,11 +31,11 @@ import PIC29 from '../assets/images/PIC29.jpg'
 import PIC30 from '../assets/images/PIC30.jpg'
 import PIC31 from '../assets/images/PIC31.jpg'
 import PIC32 from '../assets/images/PIC32.jpg'
-import PIC33 from '../assets/images/PIC32.jpg'
-import PIC34 from '../assets/images/PIC32.jpg'
-import PIC35 from '../assets/images/PIC32.jpg'
-import PIC37 from '../assets/images/PIC32.jpg'
-import PIC36 from '../assets/images/PIC32.jpg'
+import PIC33 from '../assets/images/PIC33.jpg'
+import PIC34 from '../assets/images/PIC34.jpg'
+import PIC35 from '../assets/images/PIC35.jpg'
+import PIC37 from '../assets/images/PIC36.jpg'
+import PIC36 from '../assets/images/PIC37.jpg'
 
 
 

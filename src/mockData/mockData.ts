@@ -31,15 +31,21 @@ import PIC29 from '../assets/images/PIC29.jpg'
 import PIC30 from '../assets/images/PIC30.jpg'
 import PIC31 from '../assets/images/PIC31.jpg'
 import PIC32 from '../assets/images/PIC32.jpg'
+import PIC33 from '../assets/images/PIC32.jpg'
+import PIC34 from '../assets/images/PIC32.jpg'
+import PIC35 from '../assets/images/PIC32.jpg'
+import PIC37 from '../assets/images/PIC32.jpg'
+import PIC36 from '../assets/images/PIC32.jpg'
 
 
 
 
-export const mockData: Array<{
+
+export const mockData: {
     name: string,
-    type: string,
+    type: 'Portrait' | 'Nightlife' | 'Love',
     text: string,
-}> = [
+}[] = [
         {
             name: PIC1,
             type: 'Portrait',
@@ -47,7 +53,7 @@ export const mockData: Array<{
         },
         {
             name: PIC2,
-            type: 'Nightlife',
+            type: 'Portrait',
             text: 'Hugs'
         },
         {
@@ -193,6 +199,31 @@ export const mockData: Array<{
         {
             name: PIC32,
             type: 'Nightlife',
+            text: 'Nightlife & Lights'
+        },
+        {
+            name: PIC33,
+            type: 'Portrait',
+            text: 'Nightlife & Lights'
+        },
+        {
+            name: PIC34,
+            type: 'Portrait',
+            text: 'Nightlife & Lights'
+        },
+        {
+            name: PIC35,
+            type: 'Portrait',
+            text: 'Nightlife & Lights'
+        },
+        {
+            name: PIC36,
+            type: 'Portrait',
+            text: 'Nightlife & Lights'
+        },
+        {
+            name: PIC37,
+            type: 'Portrait',
             text: 'Nightlife & Lights'
         },
     ]

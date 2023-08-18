@@ -1,26 +1,18 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { SnapItem, SnapList } from "react-snaplist-carousel";
 import { Navbar } from "../components/navbar/navbar";
-import { mockData } from "../mockData/mockData";
-import { addTypesOfPictures } from "../redux/slices/appSlice";
 import { SnapImage } from "../components/imageItem/snapImage";
 import "./homeScreenStyles.css";
 import { Menu } from "../components/menu/menu";
 import { Loader } from "../components/loader/loader";
+import { useGetImages, useGetTypes } from "../hooks";
 export const HomeScreen = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(addTypesOfPictures(mockData));
-  }, []);
+  useGetTypes()
   const types = useSelector((state: any) => state.app.typesOfPictures);
-  const [isLoading,setIsLoading] = useState(true)
 
-  useEffect(()=>{
-setTimeout(() => {
-  setIsLoading(false)
-}, 5000);
-  },[])
+
+  const {isLoading,images}  = useGetImages();
+
   return (
     <main style={{ height: "100vh", overflow: "hidden"}}>
       <Loader color="#fff" isLoading={isLoading}/>
@@ -43,7 +35,7 @@ setTimeout(() => {
           snapAlign="none"
           className="empty-div"
         ></SnapItem>
-        {mockData.map((image, index) => (
+        {images?.map((image, index) => (
           <div className="homescreen-snap-item-container" key={index}>
             <SnapImage image={image} />
           </div>

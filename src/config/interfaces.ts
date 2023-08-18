@@ -7,7 +7,7 @@ export interface NavbarProps{
 export interface SnapImageProps{
     key?:number;
     image:{
-        name?:string;
+        uri?:string;
         text?:string;
     }
 

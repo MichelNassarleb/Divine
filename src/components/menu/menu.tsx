@@ -1,5 +1,5 @@
 import MenuIcon from '@mui/icons-material/Menu';
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
 import './menuStyles.css';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link } from 'react-router-dom';

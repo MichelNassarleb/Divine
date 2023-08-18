@@ -1,29 +1,28 @@
 import { createSlice } from "@reduxjs/toolkit"
+import { AppSlice, ImagesData, Types } from "../types/types";
 
-const initialState:{
-    typesOfPictures:Array<string>;
-} = {
-   typesOfPictures:[]
-    
+
+const initialState:AppSlice = {
+   typesOfPictures:[],
+   data:[]
 }
 
 const appSlice = createSlice({
     name: 'app',
     initialState,
     reducers:{
-        addTypesOfPictures(state,{payload}){
-           payload.map((item:{name:string;type:string})=>{
-           const findMatches =  state?.typesOfPictures?.filter((type)=>type == item?.type)
-           if(findMatches.length == 0){
-            state.typesOfPictures.push(item?.type)
-           }
-           })
+        addTypesOfPictures(state,{payload}:{payload:Types[]}){
+           state.typesOfPictures = payload
+        },
+        saveImagesData(state,{payload}:{payload:ImagesData}){
+            state.data = payload
         }
     }
 })
 
 export const {
-    addTypesOfPictures
+    addTypesOfPictures,
+    saveImagesData
 } = appSlice.actions
 
 export default appSlice.reducer

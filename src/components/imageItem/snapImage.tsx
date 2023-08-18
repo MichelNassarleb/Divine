@@ -1,14 +1,13 @@
-import React, { FC, useState } from "react";
+import { FC } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { SnapItem } from "react-snaplist-carousel";
 import { SnapImageProps } from "../../config/interfaces";
 import "./snapImageStyles.css";
-import CloseIcon from "@mui/icons-material/Close";
-import { motion } from "framer-motion";
-export const SnapImage: FC<SnapImageProps> = (props: any) => {
-  const [infoDisplayed, setInfoDisplayed] = useState(false);
+
+export const SnapImage: FC<SnapImageProps> = (props: SnapImageProps) => {
+  
   return (
- props?.image?.name ? <SnapItem
+ props?.image?.uri ? <SnapItem
       margin={{ left: "0px", right: "0px" }}
       className="snap-item"
       height={"100%"}
@@ -18,7 +17,8 @@ export const SnapImage: FC<SnapImageProps> = (props: any) => {
     >
       <LazyLoadImage
         effect="blur"
-        src={props?.image.name}
+        src={props?.image.uri}
+        alt="image"
         className="img-carousel"
       />
       

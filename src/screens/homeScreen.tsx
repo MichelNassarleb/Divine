@@ -15,7 +15,6 @@ export const HomeScreen = () => {
 
   return (
     <main style={{ height: "100vh", overflow: "hidden"}}>
-      <Loader color="#fff" isLoading={isLoading}/>
       <Navbar
         name="Divine Gerges"
         types={types}

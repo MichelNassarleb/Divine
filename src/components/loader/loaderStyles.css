@@ -2,13 +2,13 @@
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background: white;
+    background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
     opacity: 2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .loader-children{
-height: 50%;
-width: 50%;
+height: 20%;
+width: 20%;
 }

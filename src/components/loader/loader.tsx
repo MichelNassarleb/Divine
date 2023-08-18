@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { CircleLoader } from "react-spinners";
 import './loaderStyles.css'
 import Lottie from "lottie-react";
-import loadingAnimation from '../../assets/animations/animation_llgutygb.json'
+import loadingAnimation from '../../assets/animations/loading_animation.json'
 
 export const Loader:FC<{isLoading?:boolean,color?:string}> = (props) =>{
 

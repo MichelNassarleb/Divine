@@ -2,9 +2,13 @@
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
+    background: white;
     opacity: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.loader-children{
+height: 50%;
+width: 50%;
 }
